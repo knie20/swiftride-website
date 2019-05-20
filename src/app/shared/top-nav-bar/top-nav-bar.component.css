@@ -1,0 +1,12 @@
+.navbar {
+    border-bottom: 5px solid #FFBC00;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #d5d5d5;
+}
+
+.nav-item {
+    padding: 5px;
+    font-size: 22px;
+    font-family: "Roboto";
+}

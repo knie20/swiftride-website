@@ -1,3 +1,16 @@
-<p>
-  home works!
-</p>
+<!-- Banner -->
+<header class="masthead">
+  <div class="container">
+    <div class="intro-text">
+      <div class="intro-heading">Empowering Canadian enterprises and workers with a smoother, more <b>sustainable</b> commute</div>
+      <div class="subscription-form pull-center">
+          <form *ngIf="formShown">
+            <input type="text" placeholder="Your Name..." class="form-control">
+            <input type="text" placeholder="Your Email..." class="form-control">
+            <input type="submit" value="Subscribe" (click)="">
+          </form>
+          <a class="btn btn-primary" *ngIf="!formShown" (click)="showSubscriptionForm()"><span class="btn-text">Get Notified</span></a>
+      </div>
+    </div>
+  </div>
+</header>

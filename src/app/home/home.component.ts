@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  formShown: boolean;
 
-  constructor() { }
+  constructor() {
+    this.formShown = false;
+  }
 
   ngOnInit() {
+  }
+
+  showSubscriptionForm = () => {
+    this.formShown = true;
   }
 
 }
