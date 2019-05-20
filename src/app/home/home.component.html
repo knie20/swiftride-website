@@ -12,7 +12,15 @@
             <button type="button" class="btn btn-primary col-sm-2 col-xs-4 offset-xs-1" (click)="subscribe()">
               <span class="oi oi-check"></span>
             </button>
-        </div>  
+        </div>
+
+        <div *ngIf="alertShown">
+            <p>
+                <ngb-alert [dismissible]="true">
+                  <strong>We need a name and an email from you!</strong>
+                </ngb-alert>
+              </p>
+        </div>
         
           <a class="btn btn-primary" *ngIf="!formShown" (click)="showSubscriptionForm()"><span class="btn-text">Get Notified</span></a>
       </div>

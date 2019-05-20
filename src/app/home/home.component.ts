@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   @Input() email: string;
 
   formShown: boolean;
+  alertShown: boolean;
   innerWidth: number;
 
   constructor() {
@@ -25,7 +26,9 @@ export class HomeComponent implements OnInit {
   }
 
   subscribe = () => {
-
+    if(!this.name) {
+      
+    }
   }
 
 }
