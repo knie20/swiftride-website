@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,17 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  @Input() name: string;
+  @Input() email: string;
+
   formShown: boolean;
+  innerWidth: number;
 
   constructor() {
     this.formShown = false;
   }
 
   ngOnInit() {
+    this.innerWidth = window.innerWidth;
   }
 
   showSubscriptionForm = () => {
     this.formShown = true;
+  }
+
+  subscribe = () => {
+
   }
 
 }

@@ -1,7 +1,7 @@
 header.masthead {
     text-align: center;
     color: white;
-    background-image: url("/../../assets/img/header_lg.png");
+    background-image: url("/assets/img/header_lg.png");
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
@@ -9,7 +9,7 @@ header.masthead {
   
   header.masthead .intro-text {
     padding-top: 150px;
-    padding-bottom: 100px;
+    padding-bottom: 300px;
   }
   
   header.masthead .intro-text .intro-heading {
@@ -22,7 +22,7 @@ header.masthead {
   @media (min-width: 768px) {
     header.masthead .intro-text {
       padding-top: 300px;
-      padding-bottom: 200px;
+      padding-bottom: 300px;
     }
 
     header.masthead .intro-text .intro-heading {
@@ -51,4 +51,12 @@ header.masthead {
   .subscription-form {
     max-width: 600px;
     margin: auto;
+  }
+
+  .subscription-form form {
+    margin: 10px 15px 10px 15px;
+  }
+
+  .subscription-form .form-control {
+      margin: 5px;
   }

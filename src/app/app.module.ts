@@ -6,7 +6,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TopNavBarComponent } from './shared/top-nav-bar/top-nav-bar.component';
+import { TopNavBarComponent } from './communal/top-nav-bar/top-nav-bar.component';
 
 @NgModule({
   declarations: [

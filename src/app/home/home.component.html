@@ -4,11 +4,16 @@
     <div class="intro-text">
       <div class="intro-heading">Empowering Canadian enterprises and workers with a smoother, more <b>sustainable</b> commute</div>
       <div class="subscription-form pull-center">
-          <form *ngIf="formShown">
-            <input type="text" placeholder="Your Name..." class="form-control">
-            <input type="text" placeholder="Your Email..." class="form-control">
-            <input type="submit" value="Subscribe" (click)="">
-          </form>
+        <div *ngIf="formShown" class="row">
+            <form class="col-sm-8 col-xs-12">
+              <input [(ngModel)]="name" name="name" type="text" placeholder="Your Full Name..." class="form-control">
+              <input [(ngModel)]="email" name="email" type="text" placeholder="Your Email..." class="form-control">
+            </form>
+            <button type="button" class="btn btn-primary col-sm-2 col-xs-4 offset-xs-1">
+              <span class="oi oi-check"></span>
+            </button>
+        </div>  
+        
           <a class="btn btn-primary" *ngIf="!formShown" (click)="showSubscriptionForm()"><span class="btn-text">Get Notified</span></a>
       </div>
     </div>
