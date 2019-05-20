@@ -37,7 +37,6 @@ header.masthead {
     background-color: rgba(255, 188, 0, 0.7);
     border-color: rgba(255, 188, 0, 0.7);
     font-size: 28px;
-    padding: 20px 40px;
   }
 
   header.masthead .btn-primary :hover {
