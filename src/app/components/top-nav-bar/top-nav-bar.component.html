@@ -3,8 +3,8 @@
 <nav class="nav navbar container-fluid">
     <div class="navbar-brand row">
       <div class="col">
-        <img [src]="'assets/img/pinwheel_'+screenSize+'.png'" alt="PinWheel" >
-        <img [src]="'assets/img/logo_'+screenSize+'.png'" alt="SWIFTRIDE" >
+        <img [src]="'assets/img/pinwheel_'+ (innerWidth < 960 ? 'sm' : 'md') +'.png'" alt="PinWheel" >
+        <img [src]="'assets/img/logo_'+ (innerWidth < 960 ? 'sm' : 'md') +'.png'" alt="SWIFTRIDE" >
       </div>
     </div>
     <div class="navbar-nav" >
@@ -15,4 +15,3 @@
         </ul>
     </div>
 </nav>
-

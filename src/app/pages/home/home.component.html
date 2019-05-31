@@ -11,7 +11,7 @@
                 <input [(ngModel)]="email" name="email" type="text" placeholder="Your Email..." class="form-control">
               </form>
               <button type="button" class="btn btn-primary col-sm-2 col-xs-4 offset-xs-1" (click)="subscribe()">
-                <span class="oi oi-check"></span>
+                <span class="oi oi-check btn-text"></span>
               </button>
           </div>
   
@@ -23,7 +23,7 @@
                 </p>
           </div>
           
-            <a class="btn btn-primary" *ngIf="!formShown" (click)="showSubscriptionForm()"><span class="btn-text">Get Notified</span></a>
+          <a class="btn btn-primary" *ngIf="!formShown" (click)="showSubscriptionForm()"><span class="btn-text">Get Notified</span></a>
         </div>
       </div>
     </div>

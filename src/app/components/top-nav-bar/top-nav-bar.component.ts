@@ -8,17 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopNavBarComponent implements OnInit {
   innerWidth: number;
-  screenSize: string;
 
   constructor() { }
 
   ngOnInit() {
     this.innerWidth = window.innerWidth;
-    if (this.innerWidth < 960) {
-      this.screenSize = 'sm';
-    } else {
-      this.screenSize = 'md';
-    }
   }
-
 }

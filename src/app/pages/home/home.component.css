@@ -37,6 +37,7 @@ header.masthead {
     background-color: rgba(255, 188, 0, 0.7);
     border-color: rgba(255, 188, 0, 0.7);
     font-size: 28px;
+    height: 100px;
   }
 
   header.masthead .btn-primary :hover {
@@ -49,11 +50,12 @@ header.masthead {
 
   .subscription-form {
     max-width: 600px;
+    height: 120px;
     margin: auto;
   }
 
   .subscription-form form {
-    margin: 10px 15px 10px 15px;
+    margin: 0px 15px 0px 15px;
   }
 
   .subscription-form .form-control {
