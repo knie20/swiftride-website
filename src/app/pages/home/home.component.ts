@@ -1,9 +1,25 @@
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
+import { trigger, style, state, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  animations: [
+    trigger('onOpen', [
+      state('opened', style({
+        marginTop: '0px',
+        opacity: '1'
+      })),
+      state('void', style({
+        marginTop: '30px',
+        opacity: '0'
+      })),
+      transition('void => opened', [
+        animate('600ms')
+      ])
+    ])
+  ]
 })
 export class HomeComponent implements OnInit {
   @Input() name: string;
@@ -12,6 +28,7 @@ export class HomeComponent implements OnInit {
   formShown: boolean;
   alertShown: boolean;
   innerWidth: number;
+  isLoaded: boolean;
 
   constructor() {
     this.formShown = false;
@@ -19,6 +36,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.innerWidth = window.innerWidth;
+    this.isLoaded = true;
   }
 
   showSubscriptionForm = () => {

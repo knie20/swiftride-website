@@ -8,5 +8,5 @@ import { Component, ViewChild } from '@angular/core';
 })
 export class AppComponent {
 
-  title = 'swiftride-website';
+  title = 'SwiftRide';
 }

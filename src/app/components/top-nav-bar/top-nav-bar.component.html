@@ -3,14 +3,14 @@
 <nav class="nav navbar container-fluid">
     <div class="navbar-brand row">
       <div class="col">
-        <img src="assets/img/pinwheel_md.png" alt="PinWheel" >
-        <img src="assets/img/logo_md.png" alt="SWIFTRIDE" >
+        <img [src]="'assets/img/pinwheel_'+screenSize+'.png'" alt="PinWheel" >
+        <img [src]="'assets/img/logo_'+screenSize+'.png'" alt="SWIFTRIDE" >
       </div>
     </div>
     <div class="navbar-nav" >
       <ul class="nav nav-pills mr-auto navbar-right col">
           <li class="nav-item">
-            <a href="" class="nav-link text-uppercase">Questions? Contact Us</a>
+            <a href="mailto:hello@swiftride.co" class="nav-link text-uppercase">Questions? Contact Us</a>
           </li>
         </ul>
     </div>

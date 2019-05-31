@@ -1,5 +1,5 @@
 .navbar {
-    border-bottom: 5px solid #FFBC00;
+    border-bottom: 5px solid #ffbc00;
     margin-left: 0px;
     margin-right: 0px;
     background-color: #d5d5d5;
@@ -9,4 +9,8 @@
     padding: 5px;
     font-size: 22px;
     font-family: "Roboto";
+}
+
+.navbar .nav-link {
+    font-size: 20px;
 }

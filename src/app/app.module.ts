@@ -1,24 +1,26 @@
-import {MatToolbarModule} from '@angular/material/toolbar';
-import { HomeModule } from './home/home.module';
-import { BrowserModule } from '@angular/platform-browser';
+import { HomeModule } from './pages/home/home.module';
 import { NgModule } from '@angular/core';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TopNavBarComponent } from './communal/top-nav-bar/top-nav-bar.component';
+import { TopNavBarComponent } from './components/top-nav-bar/top-nav-bar.component';
+import { SharedModule } from './shared/shared.module';
+import { LoadingScreenComponent } from './components/loading-screen/loading-screen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopNavBarComponent
+    TopNavBarComponent,
+    LoadingScreenComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
-    MatToolbarModule,
-    NgbModule,
-    HomeModule
+    HomeModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
