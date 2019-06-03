@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
-import { trigger, style, state, transition, animate } from '@angular/animations';
+import { trigger, style, state, transition, animate, query } from '@angular/animations';
 
 @Component({
   selector: 'app-home',
@@ -29,9 +29,11 @@ export class HomeComponent implements OnInit {
   alertShown: boolean;
   innerWidth: number;
   isLoaded: boolean;
+  formRevealed: boolean;
 
   constructor() {
     this.formShown = false;
+    this.formRevealed = false;
   }
 
   ngOnInit() {

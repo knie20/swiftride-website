@@ -34,9 +34,6 @@ header.masthead {
   }
   
   header.masthead .btn-primary {
-    background-color: rgba(255, 188, 0, 0.7);
-    border-color: rgba(255, 188, 0, 0.7);
-    font-size: 28px;
     height: 100px;
   }
 
