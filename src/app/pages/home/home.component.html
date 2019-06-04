@@ -16,7 +16,7 @@
               </app-gradient-button>
           </div>
 
-          <app-gradient-button ngbButton fxLayoutAlign="center center" *ngIf="!formShown" (click)="showSubscriptionForm()">
+          <app-gradient-button *ngIf="!formShown" ngbButton fxLayoutAlign="center center" (click)="showSubscriptionForm()">
             <span class="btn-text">Get Notified</span>
           </app-gradient-button>
         </div>
