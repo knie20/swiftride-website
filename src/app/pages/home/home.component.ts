@@ -5,6 +5,8 @@ import { trigger, style, state, transition, animate, query } from '@angular/anim
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
+  providers: [
+  ],
   animations: [
     trigger('onOpen', [
       state('opened', style({
@@ -22,7 +24,8 @@ import { trigger, style, state, transition, animate, query } from '@angular/anim
   ]
 })
 export class HomeComponent implements OnInit {
-  @Input() name: string;
+  @Input() fname: string;
+  @Input() lname: string;
   @Input() email: string;
 
   formShown: boolean;
@@ -41,14 +44,8 @@ export class HomeComponent implements OnInit {
     this.isLoaded = true;
   }
 
-  showSubscriptionForm = () => {
-    this.formShown = true;
-  }
-
   subscribe = () => {
-    if(!this.name) {
-      
-    }
+    window.location.href = 'http://eepurl.com/gtKG65';
   }
 
 }
