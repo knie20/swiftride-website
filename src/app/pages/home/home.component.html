@@ -5,18 +5,8 @@
       <div class="intro-heading">Changing the way the world moves</div>
       <div class="subscription-form">
         <div fxLayout="row" fxLayoutAlign="center center">
-          <div *ngIf="formShown" fxFlex="100%" [@revealForm]="formRevealed ? 'open' : 'void'">
-              <form fxLayout="column" fxFlex="85">
-                  <input [(ngModel)]="name" name="name" fxFlex="100%" type="text" placeholder="Your Full Name..." class="form-control">
-                  <input [(ngModel)]="email" name="email" fxFlex="100%" type="text" placeholder="Your Email..." class="form-control">
-              </form>
-  
-              <app-gradient-button fxFlex="15" (click)="subscribe()">
-                <span class="oi oi-check btn-text"></span>
-              </app-gradient-button>
-          </div>
 
-          <app-gradient-button *ngIf="!formShown" ngbButton fxLayoutAlign="center center" (click)="showSubscriptionForm()">
+          <app-gradient-button (click)="subscribe()" ngbButton fxLayoutAlign="center center">
             <span class="btn-text">Get Notified</span>
           </app-gradient-button>
         </div>
